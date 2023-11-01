@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+        <div style="flex: auto;">
+            <input v-model="num1" type="number">
+            <input v-model="num2" type="number">
+        </div>
+        <div>
+            <button @click="hasil=num1+num2">+</button>
+            <button @click="hasil=num1-num2">-</button>
+            <button @click="hasil=num1*num2">x</button>
+            <button @click="hasil=num1/num2">:</button>
+        </div>
+        <h4>Hasil : {{ hasil }}</h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
